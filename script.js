@@ -35,6 +35,6 @@ function addTeamDone(){
     document.getElementById("inputteamdonebtn").setAttribute("hidden","null");
 }
 
-function removeTeam(count){
-    null;
+function removeTeam(){
+    
 }

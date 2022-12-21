@@ -59,28 +59,29 @@
             </div>
             <div class="teams_wrapper">
                 <br>
-                <button id="inputteambtn" type="submit" onclick="addTeam()">add</button>          
+                <button class="btn" id="inputteambtn" type="submit" onclick="addTeam()">add</button>          
                 <input type="text" id="inputteam" placeholder="Team">
-                <button id="inputteamdonebtn" type="submit" onclick="addTeamDone()">done</button>         
+                <button class="btn" id="inputteamdonebtn" type="submit" onclick="addTeamDone()">done</button>         
                 <br>
                 <table class="teams_table">
                     <tr>
                         <td class="teams" id="team1" hidden><output>#</output></td>
-                        <td class="points" id="points1" hidden>0</td>
+                        <td class="points" id="points1" hidden>0</td>                        
                     </tr>
                     <tr>
                         <td class="teams" id="team2" hidden><output>#</output></td>  
-                        <td class="points" id="points2" hidden><output>0</output></td>                        
+                        <td class="points" id="points2" hidden><output>0</output></td>                      
                     </tr>
                     <tr>
                         <td class="teams" id="team3" hidden><output>#</output></td>
-                        <td class="points" id="points3" hidden><output>0</output></td>  
+                        <td class="points" id="points3" hidden><output>0</output></td>   
                     </tr>
                     <tr>
                         <td class="teams" id="team4" hidden><output>#</output></td>
-                        <td class="points" id="points4" hidden><output>0</output></td>  
+                        <td class="points" id="points4" hidden><output>0</output></td>
                     </tr>
-                </table>             
+                </table>
+                <button class="btn" id="removeteambtn" type="submit" onclick="removeTeam()" hidden>remove</button>             
                
             </div>
         </section>

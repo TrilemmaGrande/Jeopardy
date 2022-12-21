@@ -22,7 +22,7 @@ td {
     background-color: rgb(33, 43, 33);
     border: 1px;
     border-radius: 10px;
-    height: 50px;
+    height: auto;
     width: auto;
     font-weight: bold;
     font-size: large;
@@ -112,14 +112,9 @@ td {
     color: whitesmoke;    
 }
 
-#inputteambtn {
+.btn {
     color: chartreuse;
     background-color: rgb(33, 43, 33);
     border-radius: 10px;
-}
-
-#inputteamdonebtn {
-    color: chartreuse;
-    background-color: rgb(33, 43, 33);
-    border-radius: 10px;
+    height: 20px;
 }
