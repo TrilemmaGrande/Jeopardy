@@ -109,12 +109,14 @@ td {
     width: 100px;
     background-color: rgb(33, 43, 33);
     border: green;
-    color: whitesmoke;    
+    color: whitesmoke;
+    height: 25px;    
 }
 
 .btn {
     color: chartreuse;
     background-color: rgb(33, 43, 33);
     border-radius: 10px;
-    height: 20px;
+    height: 25px;
+    width: auto;
 }
