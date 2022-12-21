@@ -1,0 +1,125 @@
+body {
+    background-color: black;
+    background-position: center;
+    color: chartreuse;
+    overflow: hidden;
+}
+
+table {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    border: 1px solid greenyellow;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+}
+
+td {
+    background-color: rgb(33, 43, 33);
+    border: 1px;
+    border-radius: 10px;
+    height: 50px;
+    width: auto;
+    font-weight: bold;
+    font-size: large;
+    
+}
+
+.categories{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.btnenabled {
+    
+    background-color: rgb(33, 43, 33);
+    color: chartreuse;
+    padding: 0;
+    background: 0;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.layout {
+    width: auto;
+    height: auto;
+  
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: 1fr;
+    gap: 0px;    
+    justify-content: space-around;
+    justify-items: center;
+
+  
+}
+
+.titel {
+  
+    align-self: center;
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.gamegrid {
+   
+    align-items: 0 auto;
+    align-self: center;
+    text-align: center;
+  
+    
+}
+
+.teams_wrapper {
+ 
+    width: 850px;
+    position:relative;
+}
+
+.teams_table {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.teams {
+    text-align: center;
+    background-color: rgb(33, 43, 33);
+    border: green;
+    border-radius: 10px;
+    height: 20px;
+    width: 120px;
+}
+
+.points {
+    text-align: center;
+    border: green;
+    height: 20px;
+    width: 20px;    
+}
+
+#inputteam {
+    width: 100px;
+    background-color: rgb(33, 43, 33);
+    border: green;
+    color: whitesmoke;    
+}
+
+#inputteambtn {
+    color: chartreuse;
+    background-color: rgb(33, 43, 33);
+    border-radius: 10px;
+}
+
+#inputteamdonebtn {
+    color: chartreuse;
+    background-color: rgb(33, 43, 33);
+    border-radius: 10px;
+}

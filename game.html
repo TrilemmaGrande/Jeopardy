@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="style.css">        
+        <title>Jeopardy</title>
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <section class="layout">
+            <div class="titel">
+                <h1>JEOPARDY</h1>
+            </div>
+            <div class="gamegrid">
+                <table>
+                    <tr class="categories">
+                        <th>CODING</th>
+                        <th>NETZWERK</th>
+                        <th>ZAHLENSYSTEME</th>
+                        <th>DATENBANKEN</th>
+                    </tr>
+                    <tr>
+                        <td id="field100a"><button class="btnenabled" type="submit">100</button></td>
+                        <td id="field100b"><button class="btnenabled" type="submit">100</button></td>
+                        <td id="field100c"><button class="btnenabled" type="submit">100</button></td>
+                        <td id="field100d"><button class="btnenabled" type="submit">100</button></td>
+                    </tr>
+                    <tr>
+                        <td id="field200a"><button class="btnenabled" type="submit">200</button></td>
+                        <td id="field200b"><button class="btnenabled" type="submit">200</button></td>
+                        <td id="field200c"><button class="btnenabled" type="submit">200</button></td>
+                        <td id="field200d"><button class="btnenabled" type="submit">200</button></td>
+                    </tr>
+                    <tr>
+                        <td id="field300a"><button class="btnenabled" type="submit">300</button></td>
+                        <td id="field300b"><button class="btnenabled" type="submit">300</button></td>
+                        <td id="field300c"><button class="btnenabled" type="submit">300</button></td>
+                        <td id="field300d"><button class="btnenabled" type="submit">300</button></td>
+                    </tr>
+                    <tr>
+                        <td id="field400a"><button class="btnenabled" type="submit">400</button></td>
+                        <td id="field400b"><button class="btnenabled" type="submit">400</button></td>
+                        <td id="field400c"><button class="btnenabled" type="submit">400</button></td>
+                        <td id="field400d"><button class="btnenabled" type="submit">400</button></td>
+                    </tr>
+                    <tr>
+                        <td id="field500a"><button class="btnenabled" type="submit">500</button></td>
+                        <td id="field500b"><button class="btnenabled" type="submit">500</button></td>
+                        <td id="field500c"><button class="btnenabled" type="submit">500</button></td>
+                        <td id="field500d"><button class="btnenabled" type="submit">500</button></td>
+                    </tr>
+                    <tr>
+                        <td id="field600a"><button class="btnenabled" type="submit">Bonus</button></td>
+                        <td id="field600b"><button class="btnenabled" type="submit">Bonus</button></td>
+                        <td id="field600c"><button class="btnenabled" type="submit">Bonus</button></td>
+                        <td id="field600d"><button class="btnenabled" type="submit">Bonus</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="teams_wrapper">
+                <br>
+                <button id="inputteambtn" type="submit" onclick="addTeam()">add</button>          
+                <input type="text" id="inputteam" placeholder="Team">
+                <button id="inputteamdonebtn" type="submit" onclick="addTeamDone()">done</button>         
+                <br>
+                <table class="teams_table">
+                    <tr>
+                        <td class="teams" id="team1" hidden><output>#</output></td>
+                        <td class="points" id="points1" hidden>0</td>
+                    </tr>
+                    <tr>
+                        <td class="teams" id="team2" hidden><output>#</output></td>  
+                        <td class="points" id="points2" hidden><output>0</output></td>                        
+                    </tr>
+                    <tr>
+                        <td class="teams" id="team3" hidden><output>#</output></td>
+                        <td class="points" id="points3" hidden><output>0</output></td>  
+                    </tr>
+                    <tr>
+                        <td class="teams" id="team4" hidden><output>#</output></td>
+                        <td class="points" id="points4" hidden><output>0</output></td>  
+                    </tr>
+                </table>             
+               
+            </div>
+        </section>
+    </body>
+</html>
