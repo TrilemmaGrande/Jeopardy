@@ -12,7 +12,7 @@ table {
 }
 
 th {
-    border: 1px solid greenyellow;
+    border: 1px solid chartreuse;
     border-radius: 10px;
     height: 50px;
     width: 200px;
@@ -105,6 +105,88 @@ td {
     width: 20px;    
 }
 
+.btn {
+    color: chartreuse;
+    background-color: rgb(33, 43, 33);
+    border-radius: 10px;
+    height: 25px;
+    width: auto;
+}
+
+.labelquestion {
+    color: chartreuse;
+    background-color: rgb(33, 43, 33);
+    padding: 10px;
+    border: 2px;
+    border-color: chartreuse;
+    border-radius: 10px;
+    height: 40px;
+    width: 100%;
+    float: left;
+    display: block;
+    margin-right: 1px; 
+    text-align: center;   
+}
+
+.btnright {
+    color: green;
+    background-color: rgb(33, 43, 33);
+    border-radius: 10px;
+    height: 20px;
+    width: auto;
+    display:block;
+    float: top;
+    margin-right: 20px;    
+    padding: 0;
+}
+
+.btnwrong {
+    color: red;
+    background-color: rgb(33, 43, 33);
+    border-radius: 10px;
+    height: 20px;
+    width: auto;
+    display:block;
+    float: bottom;
+    margin-right: 20px;   
+    padding: 0; 
+}
+
+.verticalbutton {
+    margin: 0 auto;
+    display: block;
+}
+
+.questions {
+    color: chartreuse;
+    height: 50px;
+    width: 50px;
+    margin-top: 0;
+    border: 4px, red;
+    padding: 20%;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.center {
+    margin: 0 auto;
+    width: 50%;
+}
+
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(33, 43, 33);
+    z-index: 2;
+    cursor: pointer;
+    justify-items: center; 
+  } 
+
 #inputteam {
     width: 100px;
     background-color: rgb(33, 43, 33);
@@ -113,10 +195,3 @@ td {
     height: 25px;    
 }
 
-.btn {
-    color: chartreuse;
-    background-color: rgb(33, 43, 33);
-    border-radius: 10px;
-    height: 25px;
-    width: auto;
-}
