@@ -21,11 +21,9 @@
                         <tr>
                             <td>
                                 <label class="labelquestion", id="teamlabel1", type="text" hidden></label>
-                                
                             </td>
                             <td>
                                 <label class="labelquestion", id="teamlabel2", type="text" hidden></label>
-        
                             </td>
                             <td>
                                 <label class="labelquestion", id="teamlabel3", type="text" hidden></label>
@@ -36,25 +34,25 @@
                         </tr>
                         <tr>
                             <td>
-                                <button class="btnright", id="teambtnright1", type="submit", onclick="toggleQuestionHidden();" hidden>right</button>
-                                <button class="btnwrong", id="teambtnwrong1", type="submit", onclick="toggleQuestionHidden();" hidden>wrong</button>
+                                <button class="btnright", id="teambtnright1", type="submit", onclick="rightAnswer(1);" hidden>right</button>
+                                <button class="btnwrong", id="teambtnwrong1", type="submit", onclick="wrongAnswer(1);" hidden>wrong</button>
                             </td>
                             <td>
-                                <button class="btnright", id="teambtnright2", type="submit", onclick="toggleQuestionHidden();" hidden>right</button>
-                                <button class="btnwrong", id="teambtnwrong2", type="submit", onclick="toggleQuestionHidden();" hidden>wrong</button>
+                                <button class="btnright", id="teambtnright2", type="submit", onclick="rightAnswer(2);" hidden>right</button>
+                                <button class="btnwrong", id="teambtnwrong2", type="submit", onclick="wrongAnswer(2);" hidden>wrong</button>
                             </td>
                             <td>
-                                <button class="btnright", id="teambtnright3", type="submit", onclick="toggleQuestionHidden();" hidden>right</button>
-                                <button class="btnwrong", id="teambtnwrong3", type="submit", onclick="toggleQuestionHidden();" hidden>wrong</button>
+                                <button class="btnright", id="teambtnright3", type="submit", onclick="rightAnswer(3);" hidden>right</button>
+                                <button class="btnwrong", id="teambtnwrong3", type="submit", onclick="wrongAnswer(3);" hidden>wrong</button>
                             </td>
                             <td>
-                                <button class="btnright", id="teambtnright4", type="submit", onclick="toggleQuestionHidden();" hidden>right</button>
-                                <button class="btnwrong", id="teambtnwrong4", type="submit", onclick="toggleQuestionHidden();" hidden>wrong</button>
+                                <button class="btnright", id="teambtnright4", type="submit", onclick="rightAnswer(4);" hidden>right</button>
+                                <button class="btnwrong", id="teambtnwrong4", type="submit", onclick="wrongAnswer(4);" hidden>wrong</button>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                            <button class="btnwrong", id="noanswerbtn", type="submit", onclick="toggleQuestionHidden();">no one knows</button>
+                            <button class="btnwrong", id="noanswerbtn", type="submit", onclick="nobodyKnows();">no one knows</button>
                             </td>
                         </tr>
                     </table>
@@ -114,19 +112,19 @@
                 <table class="teams_table">
                     <tr>
                         <td class="teams" id="team1" hidden><output>#</output></td>
-                        <td class="points" id="points1" hidden>0</td>                        
+                        <td class="points" id="points1" type="number" hidden>0</td>                        
                     </tr>
                     <tr>
                         <td class="teams" id="team2" hidden><output>#</output></td>  
-                        <td class="points" id="points2" hidden><output>0</output></td>                      
+                        <td class="points" id="points2" hidden>0</td>                      
                     </tr>
                     <tr>
                         <td class="teams" id="team3" hidden><output>#</output></td>
-                        <td class="points" id="points3" hidden><output>0</output></td>   
+                        <td class="points" id="points3" hidden>0</td>   
                     </tr>
                     <tr>
                         <td class="teams" id="team4" hidden><output>#</output></td>
-                        <td class="points" id="points4" hidden><output>0</output></td>
+                        <td class="points" id="points4" hidden>0</td>
                     </tr>
                 </table>
                 <button class="btn" id="removeteambtn" type="submit" onclick="removeTeam()" hidden>remove</button>   
