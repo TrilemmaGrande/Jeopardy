@@ -1,6 +1,7 @@
 var teamsArr = [];
 var flag = 0;
 var choosenQuestions = [];
+var actualPoints = 0;
 
 function addTeam(){
     let teamsInput = "";
@@ -36,16 +37,15 @@ function addTeam(){
 }
 
 function addTeamDone(){
+    for (i = 1; i < teamsArr.length +1; i++){
+        document.getElementById("teambtnright"+i).toggleAttribute("hidden");
+        document.getElementById("teambtnwrong"+i).toggleAttribute("hidden");
+        document.getElementById("teamlabel"+i).innerHTML= teamsArr[i -1];
+    }
     document.getElementById("inputteam").setAttribute("hidden","null");
     document.getElementById("inputteambtn").setAttribute("hidden","null");
     document.getElementById("inputteamdonebtn").toggleAttribute("hidden");
     document.getElementById("removeteambtn").toggleAttribute("hidden");
-
-    for (let i = 1; i < teamsArr.length; i++){
-        document.getElementById("teambtn"+i).toggleAttribute("hidden");
-        document.getElementById("teambtnright"+i).toggleAttribute("hidden");
-        document.getElementById("teambtnwrong"+i).toggleAttribute("hidden");
-    }
 }
 
 function removeTeam(){
@@ -66,11 +66,12 @@ function removeTeam(){
 }
 
 function openQuestion(choosenField){
-    document.getElementById("field"+choosenField).style.backgroundColor = "#878a87";
+    document.getElementById("field"+choosenField).style.backgroundColor = "#042503";
     if (choosenQuestions.includes(choosenField) == false){
         document.getElementById("overlay").toggleAttribute("hidden");
         document.getElementById("q"+choosenField).toggleAttribute("hidden");
         choosenQuestions.push(choosenField);
+        document.getElementById("questions").innerText= "testtest";
     }  
 }
 

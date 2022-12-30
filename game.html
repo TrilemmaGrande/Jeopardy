@@ -6,138 +6,106 @@
         <title>Jeopardy</title>
     </head>
     <body>
-        <div id="overlay", hidden >
-            <section>
-                <p class="questions", name="questions", id="qa100", hidden>test test test test test test test test test test test test test test test test test test 
-                </p>       
-                <p class="questions", name="questions", id="qb100", hidden> test2test2test2test2test2test2test 2test2test2test2test2test2test2test2
-                </p>
-                <p class="questions", name="questions", id="qc100", hidden> test2test2test2test2test2test2test 2test2test2test2test2test2test2test2
-                </p>
-                <p class="questions", name="questions", id="qd100", hidden> test2test2test2test2test2test2test 2test2test2test2test2test2test2test2
-                </p>
-
-                <p class="questions", name="questions", id="qa200", hidden> test2test2test2test2test2test2test 2test2test2test2test2test2test2test2
-                </p>
-                <p class="questions", name="questions", id="qb200", hidden> test2test2test2test2test2test2test 2test2test2test2test2test2test2test2
-                </p>
-                <p class="questions", name="questions", id="qc200", hidden> test2test2test2test2test2test2test 2test2test2test2test2test2test2test2
-                </p>
-                <p class="questions", name="questions", id="qd200", hidden> test2test2test2test2test2test2test 2test2test2test2test2test2test2test2
-                </p>
-
-                <p class="questions", name="questions", id="qa300", hidden> test2test2test2test2test2test2test 2test2test2test2test2test2test2test2
-                </p>
-                <p class="questions", name="questions", id="qb300", hidden> test2test2test2test2test2test2test 2test2test2test2test2test2test2test2
-                </p>
-                <p class="questions", name="questions", id="qc300", hidden> test2test2test2test2test2test2test 2test2test2test2test2test2test2test2
-                </p>
-                <p class="questions", name="questions", id="qd300", hidden> test2test2test2test2test2test2test 2test2test2test2test2test2test2test2
-                </p>
-
-                <p class="questions", name="questions", id="qa400", hidden> test2test2test2test2test2test2test 2test2test2test2test2test2test2test2
-                </p>
-                <p class="questions", name="questions", id="qb400", hidden> test2test2test2test2test2test2test 2test2test2test2test2test2test2test2
-                </p>
-                <p class="questions", name="questions", id="qc400", hidden> test2test2test2test2test2test2test 2test2test2test2test2test2test2test2
-                </p>
-                <p class="questions", name="questions", id="qd400", hidden> test2test2test2test2test2test2test 2test2test2test2test2test2test2test2
-                </p>
-
-                <p class="questions", name="questions", id="qa500", hidden> test2test2test2test2test2test2test 2test2test2test2test2test2test2test2
-                </p>
-                <p class="questions", name="questions", id="qb500", hidden> test2test2test2test2test2test2test 2test2test2test2test2test2test2test2
-                </p>
-                <p class="questions", name="questions", id="qc500", hidden> test2test2test2test2test2test2test 2test2test2test2test2test2test2test2
-                </p>
-                <p class="questions", name="questions", id="qd500", hidden> test2test2test2test2test2test2test 2test2test2test2test2test2test2test2
-                </p>
-
-                <p class="questions", name="questions", id="qa600", hidden> test2test2test2test2test2test2test 2test2test2test2test2test2test2test2
-                </p>
-                <p class="questions", name="questions", id="qb600", hidden> test2test2test2test2test2test2test 2test2test2test2test2test2test2test2
-                </p>
-                <p class="questions", name="questions", id="qc600", hidden> test2test2test2test2test2test2test 2test2test2test2test2test2test2test2
-                </p>
-                <p class="questions", name="questions", id="qd600", hidden> test2test2test2test2test2test2test 2test2test2test2test2test2test2test2
-                </p>
-            </section>
-            <section>
-                <div class="center">
-                        <label class="labelquestion", id="teamlabel1", type="text" hidden>team1</label>
-                    <div class="verticalbutton">
-                        <button class="btnright", id="teambtnright1", type="submit", onclick="toggleQuestionHidden();" hidden>right</button>
-                        <button class="btnwrong", id="teambtnwrong1", type="submit", onclick="toggleQuestionHidden();" hidden>wrong</button>
-                    </div>
-                        <label class="labelquestion", id="teamlabel2", type="text" hidden>team2</label>
-                    <div class="verticalbutton">
-                        <button class="btnright", id="teambtnright2", type="submit", onclick="toggleQuestionHidden();" hidden>right</button>
-                        <button class="btnwrong", id="teambtnwrong2", type="submit", onclick="toggleQuestionHidden();" hidden>wrong</button>
-                    </div>
-                        <label class="labelquestion", id="teamlabel3", type="text" hidden>team3</label>
-                    <div class="verticalbutton">
-                        <button class="btnright", id="teambtnright3", type="submit", onclick="toggleQuestionHidden();" hidden>right</button>
-                        <button class="btnwrong", id="teambtnwrong3", type="submit", onclick="toggleQuestionHidden();" hidden>wrong</button>
-                    </div>
-                        <label class="labelquestion", id="teamlabel4", type="text" hidden>team4</label>
-                    <div class="verticalbutton">
-                        <button class="btnright", id="teambtnright4", type="submit", onclick="toggleQuestionHidden();" hidden>right</button>
-                        <button class="btnwrong", id="teambtnwrong4", type="submit", onclick="toggleQuestionHidden();" hidden>wrong</button>
-                    </div>
-                </div>
-            </section>
+    <script src="script.js"></script>
+    <section class="layout">
+        <div class="titel">
+            <h1>JEOPARDY</h1>
         </div>
-        <script src="script.js"></script>
-        <section class="layout">
-            <div class="titel">
-                <h1>JEOPARDY</h1>
+        <div class="gamegrid">
+            <div id="overlay", hidden >
+                <section>
+                    <p class="questions", name="questions", hidden> test
+                    </p>       
+                </section>
+                <section class="teams_wrapper">
+                    <table>
+                        <tr>
+                            <td>
+                                <label class="labelquestion", id="teamlabel1", type="text" hidden></label>
+                                
+                            </td>
+                            <td>
+                                <label class="labelquestion", id="teamlabel2", type="text" hidden></label>
+        
+                            </td>
+                            <td>
+                                <label class="labelquestion", id="teamlabel3", type="text" hidden></label>
+                            </td>
+                            <td>
+                                <label class="labelquestion", id="teamlabel4", type="text" hidden></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="btnright", id="teambtnright1", type="submit", onclick="toggleQuestionHidden();" hidden>right</button>
+                                <button class="btnwrong", id="teambtnwrong1", type="submit", onclick="toggleQuestionHidden();" hidden>wrong</button>
+                            </td>
+                            <td>
+                                <button class="btnright", id="teambtnright2", type="submit", onclick="toggleQuestionHidden();" hidden>right</button>
+                                <button class="btnwrong", id="teambtnwrong2", type="submit", onclick="toggleQuestionHidden();" hidden>wrong</button>
+                            </td>
+                            <td>
+                                <button class="btnright", id="teambtnright3", type="submit", onclick="toggleQuestionHidden();" hidden>right</button>
+                                <button class="btnwrong", id="teambtnwrong3", type="submit", onclick="toggleQuestionHidden();" hidden>wrong</button>
+                            </td>
+                            <td>
+                                <button class="btnright", id="teambtnright4", type="submit", onclick="toggleQuestionHidden();" hidden>right</button>
+                                <button class="btnwrong", id="teambtnwrong4", type="submit", onclick="toggleQuestionHidden();" hidden>wrong</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <button class="btnwrong", id="noanswerbtn", type="submit", onclick="toggleQuestionHidden();">no one knows</button>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
             </div>
-            <div class="gamegrid">
-                <table>
-                    <tr class="categories">
-                        <th>CODING</th>
-                        <th>NETZWERK</th>
-                        <th>ZAHLENSYSTEME</th>
-                        <th>DATENBANKEN</th>
-                    </tr>
-                    <tr>
-                        <td id="fielda100"><button class="btnenabled" type="submit" onclick="openQuestion('a100')">100</button></td>
-                        <td id="fieldb100"><button class="btnenabled" type="submit" onclick="openQuestion('b100')">100</button></td>
-                        <td id="fieldc100"><button class="btnenabled" type="submit" onclick="openQuestion('c100')">100</button></td>
-                        <td id="fieldd100"><button class="btnenabled" type="submit" onclick="openQuestion('d100')">100</button></td>
-                    </tr>
-                    <tr>
-                        <td id="fielda200"><button class="btnenabled" type="submit" onclick="openQuestion('a200')">200</button></td>
-                        <td id="fieldb200"><button class="btnenabled" type="submit" onclick="openQuestion('b200')">200</button></td>
-                        <td id="fieldc200"><button class="btnenabled" type="submit" onclick="openQuestion('c200')">200</button></td>
-                        <td id="fieldd200"><button class="btnenabled" type="submit" onclick="openQuestion('d200')">200</button></td>
-                    </tr>
-                    <tr>
-                        <td id="fielda300"><button class="btnenabled" type="submit" onclick="openQuestion('a300')">300</button></td>
-                        <td id="fieldb300"><button class="btnenabled" type="submit" onclick="openQuestion('b300')">300</button></td>
-                        <td id="fieldc300"><button class="btnenabled" type="submit" onclick="openQuestion('c300')">300</button></td>
-                        <td id="fieldd300"><button class="btnenabled" type="submit" onclick="openQuestion('d300')">300</button></td>
-                    </tr>
-                    <tr>
-                        <td id="fielda400"><button class="btnenabled" type="submit" onclick="openQuestion('a400')">400</button></td>
-                        <td id="fieldb400"><button class="btnenabled" type="submit" onclick="openQuestion('b400')">400</button></td>
-                        <td id="fieldc400"><button class="btnenabled" type="submit" onclick="openQuestion('c400')">400</button></td>
-                        <td id="fieldd400"><button class="btnenabled" type="submit" onclick="openQuestion('d400')">400</button></td>
-                    </tr>
-                    <tr>
-                        <td id="fielda500"><button class="btnenabled" type="submit" onclick="openQuestion('a500')">500</button></td>
-                        <td id="fieldb500"><button class="btnenabled" type="submit" onclick="openQuestion('b500')">500</button></td>
-                        <td id="fieldc500"><button class="btnenabled" type="submit" onclick="openQuestion('c500')">500</button></td>
-                        <td id="fieldd500"><button class="btnenabled" type="submit" onclick="openQuestion('d500')">500</button></td>
-                    </tr>
-                    <tr>
-                        <td id="fielda600"><button class="btnenabled" type="submit" onclick="openQuestion('a600')">Bonus</button></td>
-                        <td id="fieldb600"><button class="btnenabled" type="submit" onclick="openQuestion('b600')">Bonus</button></td>
-                        <td id="fieldc600"><button class="btnenabled" type="submit" onclick="openQuestion('c600')">Bonus</button></td>
-                        <td id="fieldd600"><button class="btnenabled" type="submit" onclick="openQuestion('d600')">Bonus</button></td>
-                    </tr>
-                </table>
-            </div>
+            <table>
+                <tr class="categories">
+                    <th>CODING</th>
+                    <th>NETZWERK</th>
+                    <th>ZAHLENSYSTEME</th>
+                    <th>DATENBANKEN</th>
+                </tr>
+                <tr>
+                    <td id="fielda100"><button class="btnenabled" type="submit" onclick="openQuestion('a100')">100</button></td>
+                    <td id="fieldb100"><button class="btnenabled" type="submit" onclick="openQuestion('b100')">100</button></td>
+                    <td id="fieldc100"><button class="btnenabled" type="submit" onclick="openQuestion('c100')">100</button></td>
+                    <td id="fieldd100"><button class="btnenabled" type="submit" onclick="openQuestion('d100')">100</button></td>
+                </tr>
+                <tr>
+                    <td id="fielda200"><button class="btnenabled" type="submit" onclick="openQuestion('a200')">200</button></td>
+                    <td id="fieldb200"><button class="btnenabled" type="submit" onclick="openQuestion('b200')">200</button></td>
+                    <td id="fieldc200"><button class="btnenabled" type="submit" onclick="openQuestion('c200')">200</button></td>
+                    <td id="fieldd200"><button class="btnenabled" type="submit" onclick="openQuestion('d200')">200</button></td>
+                </tr>
+                <tr>
+                    <td id="fielda300"><button class="btnenabled" type="submit" onclick="openQuestion('a300')">300</button></td>
+                    <td id="fieldb300"><button class="btnenabled" type="submit" onclick="openQuestion('b300')">300</button></td>
+                    <td id="fieldc300"><button class="btnenabled" type="submit" onclick="openQuestion('c300')">300</button></td>
+                    <td id="fieldd300"><button class="btnenabled" type="submit" onclick="openQuestion('d300')">300</button></td>
+                </tr>
+                <tr>
+                    <td id="fielda400"><button class="btnenabled" type="submit" onclick="openQuestion('a400')">400</button></td>
+                    <td id="fieldb400"><button class="btnenabled" type="submit" onclick="openQuestion('b400')">400</button></td>
+                    <td id="fieldc400"><button class="btnenabled" type="submit" onclick="openQuestion('c400')">400</button></td>
+                    <td id="fieldd400"><button class="btnenabled" type="submit" onclick="openQuestion('d400')">400</button></td>
+                </tr>
+                <tr>
+                    <td id="fielda500"><button class="btnenabled" type="submit" onclick="openQuestion('a500')">500</button></td>
+                    <td id="fieldb500"><button class="btnenabled" type="submit" onclick="openQuestion('b500')">500</button></td>
+                    <td id="fieldc500"><button class="btnenabled" type="submit" onclick="openQuestion('c500')">500</button></td>
+                    <td id="fieldd500"><button class="btnenabled" type="submit" onclick="openQuestion('d500')">500</button></td>
+                </tr>
+                <tr>
+                    <td id="fielda600"><button class="btnenabled" type="submit" onclick="openQuestion('a600')">Bonus</button></td>
+                    <td id="fieldb600"><button class="btnenabled" type="submit" onclick="openQuestion('b600')">Bonus</button></td>
+                    <td id="fieldc600"><button class="btnenabled" type="submit" onclick="openQuestion('c600')">Bonus</button></td>
+                    <td id="fieldd600"><button class="btnenabled" type="submit" onclick="openQuestion('d600')">Bonus</button></td>
+                </tr>
+            </table>
+        </div>
             <div class="teams_wrapper">
                 <br>
                 <button class="btn" id="inputteambtn" type="submit" onclick="addTeam()">add</button>          
