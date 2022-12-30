@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="questionstyle.css">  
+    </head>
+    <body>
+<pre> //Errorcode?
+
+    static void Main(string[] args)
+    {
+        char[] input = “darkmode forever, light attract bugs“.ToCharArray();
+        char[] reversed = new char[input.Length];
+        
+        Console.WriteLine(input);
+        for (int i = 0; i < input.Length; i++){
+            reversed[input.Length - i] = input[i];
+        }
+        Console.Write(reversed);
+    }    
+</pre>
+</body>
+</html>

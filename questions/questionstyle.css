@@ -3,14 +3,14 @@ body {
     background-position: center;
     color: chartreuse;
     overflow: hidden;
-    text-align: center;
+    text-align: left;
     font-size: x-large;
     position: relative;
     height: 400px;
     width: auto;
 }
 
-p {
+pre {
     margin: 0;
     position: absolute;
     top: 50%;

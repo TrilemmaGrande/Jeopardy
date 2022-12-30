@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="questionstyle.css">  
+    </head>
+    <body>
+<pre> 
+    
+--Fehlersuche:
+
+CREATE TABLE mytable ( 
+    myid NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY, 
+    myfirstvalue CHAR NOT NULL);
+CREATE TABLE mysecondtable (
+    mysecondid NUMBER PRIMARY KEY, 
+    mysecondvalue VARCHAR2(100);
+SAVEPOINT a;
+INSERT INTO mytable (myfirstvalue) VALUES ('test');
+ALTER TABLE mytable  ADD CONSTRAINT 
+f FOREIGN KEY (myid) REFERENCES mysecondtable (mysecondid);
+ROLLBACK TO SAVEPOINT a;
+COMMIT;
+
+</pre>
+</body>
+</html>
