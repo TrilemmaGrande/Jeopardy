@@ -69,10 +69,9 @@ function openQuestion(choosenField){
     document.getElementById("field"+choosenField).style.backgroundColor = "#042503";
     if (choosenQuestions.includes(choosenField) == false){
         document.getElementById("overlay").toggleAttribute("hidden");
-        document.getElementById("q"+choosenField).toggleAttribute("hidden");
-        choosenQuestions.push(choosenField);
-        document.getElementById("questions").innerText= "testtest";
-    }  
+        choosenQuestions.push(choosenField);  
+        document.getElementById("questions").src = "questions/"+choosenField+".html";      
+    }
 }
 
 function toggleQuestionHidden(){
