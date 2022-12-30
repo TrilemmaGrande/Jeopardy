@@ -46,6 +46,7 @@ function addTeamDone(){
     document.getElementById("inputteambtn").setAttribute("hidden","null");
     document.getElementById("inputteamdonebtn").toggleAttribute("hidden");
     document.getElementById("removeteambtn").toggleAttribute("hidden");
+    document.getElementById("overlaytext").setAttribute("hidden","null");
 }
 
 function removeTeam(){
