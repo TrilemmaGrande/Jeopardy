@@ -70,11 +70,28 @@ function openQuestion(choosenField){
     if (choosenQuestions.includes(choosenField) == false){
         document.getElementById("overlay").toggleAttribute("hidden");
         choosenQuestions.push(choosenField);  
-        document.getElementById("questions").src = "questions/"+choosenField+".html";      
+        document.getElementById("questions").src = "questions/"+choosenField+".html";  
+        actualPoints = parseInt(choosenField.substring(1,4))    
     }
 }
 
 function toggleQuestionHidden(){
     document.getElementById("overlay").toggleAttribute("hidden");
-    document.getElementById("q"+choosenQuestions[choosenQuestions.length -1]).toggleAttribute("hidden");
+}
+
+function rightAnswer(teamIndex){
+    let fuckJavaScript = parseInt(document.getElementById("points"+teamIndex).innerHTML);
+    fuckJavaScript += parseInt(actualPoints);
+    document.getElementById("points"+teamIndex).innerHTML = fuckJavaScript;
+    document.getElementById("field"+choosenQuestions[choosenQuestions.length -1]).innerHTML = teamsArr[teamIndex -1] + " " + actualPoints;
+    toggleQuestionHidden();
+}
+
+function wrongAnswer(teamIndex){
+    document.getElementById("points"+teamIndex).innerHTML -= +actualPoints;
+}
+
+function nobodyKnows(){
+    document.getElementById("field"+choosenQuestions[choosenQuestions.length -1]).innerHTML = "--- " + actualPoints;
+    toggleQuestionHidden();
 }
